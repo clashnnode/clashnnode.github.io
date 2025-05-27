@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN" class="no-js">
+<!-- BEGIN HEAD -->
+
+<head>
+        <link rel="canonical" href="https://clashnnode.github.io/news/article-117758.htm" />
+    <meta charset="utf-8" />
+    <title>手机端V2Ray无法使用全攻略：问题诊断与解决方案详解</title>
+        <meta name="description" content="随着网络审查和地域限制的加强，V2Ray作为一款功能强大的代理工具，成为许多用户手机端科学上网的首选。然而，由于手机系统复杂多样、网络环境千变万化，许多用户在使用V2Ray手机端时遇到了各种无法正常连" />
+        <link rel="icon" href="/assets/website/img/vlessgithub/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费ClashN节点 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clashnnode.github.io/news/article-117758.htm" />
+    <meta property="og:site_name" content="免费ClashN节点 订阅教程网" />
+    <meta property="og:title" content="手机端V2Ray无法使用全攻略：问题诊断与解决方案详解" />
+    <meta property="og:image" content="https://clashnnode.github.io/uploads/20240903/60adbfe1430a2ab3f7613c120a5ec9a4.webp" />
+        <meta property="og:release_date" content="2025-05-23T08:11:47" />
+    <meta property="og:updated_time" content="2025-05-23T08:11:47" />
+        <meta property="og:description" content="随着网络审查和地域限制的加强，V2Ray作为一款功能强大的代理工具，成为许多用户手机端科学上网的首选。然而，由于手机系统复杂多样、网络环境千变万化，许多用户在使用V2Ray手机端时遇到了各种无法正常连" />
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="手机端V2Ray无法使用全攻略：问题诊断与解决方案详解">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="/assets/website/js/frontend/vlessgithub/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/website/js/frontend/vlessgithub/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="/assets/website/css/vlessgithub/animate.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/vlessgithub/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <!-- THEME STYLES -->
+    <link href="/assets/website/css/vlessgithub/layout.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-97EYDJXJDJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-97EYDJXJDJ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+
+<body id="body" data-spy="scroll" data-target=".header" data-page="detail">
+        <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="logo-wrap" href="/">
+                                                <span>免费ClashN节点</span>
+                                                </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-right">
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/">首页</a></li>
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/paid-subscribe/">推荐机场</a></li>
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/news/">新闻资讯</a></li>
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/client.htm">客户端</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+    <!--========== SLIDER ==========-->
+    <div class="promo-block category">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 sm-margin-b-60">
+                    <div class="margin-b-30">
+                        <h1 class="promo-block-title">手机端V2Ray无法使用全攻略：问题诊断与解决方案详解</h1>
+                        <p class="promo-block-text">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="promo-block-img-wrap">
+                        <img class="promo-block-img img-responsive" src="/assets/website/img/vlessgithub/mockup/avatar-01.png" align="Avatar">
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!--========== SLIDER ==========-->
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- About -->
+    <div id="about">
+        <div class="container content-lg">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="31" data-end="204">随着网络审查和地域限制的加强，V2Ray作为一款功能强大的代理工具，成为许多用户手机端科学上网的首选。然而，由于手机系统复杂多样、网络环境千变万化，许多用户在使用V2Ray手机端时遇到了各种无法正常连接和使用的问题。本文将结合实际情况，全面剖析手机端V2Ray常见故障的成因，细致梳理排查步骤，帮助用户快速定位并解决问题，保障顺畅安全的网络体验。</p>
+<hr data-start="206" data-end="209">
+<h2 data-start="211" data-end="230">一、手机端V2Ray安装流程简述</h2>
+<p data-start="232" data-end="269">在深入问题分析之前，确保手机端V2Ray正确安装是基础。大致安装步骤包括：</p>
+<ol data-start="271" data-end="480">
+<li data-start="271" data-end="355">
+<p data-start="274" data-end="355"><strong data-start="274" data-end="283">下载客户端</strong><br data-start="283" data-end="286">
+目前主流的V2Ray手机端客户端包括安卓平台的V2RayNG和iOS平台的V2RayX等。建议前往官方渠道或知名应用市场下载最新版。</p>
+</li>
+<li data-start="357" data-end="410">
+<p data-start="360" data-end="410"><strong data-start="360" data-end="369">安装并授权</strong><br data-start="369" data-end="372">
+安装后，根据手机系统提示赋予必要的权限，特别是网络访问和后台运行权限。</p>
+</li>
+<li data-start="412" data-end="480">
+<p data-start="415" data-end="480"><strong data-start="415" data-end="423">导入配置</strong><br data-start="423" data-end="426">
+手动输入或扫描导入V2Ray配置文件（通常是JSON格式），包括服务器地址、端口、用户ID等核心参数。</p>
+</li>
+</ol>
+<hr data-start="482" data-end="485">
+<h2 data-start="487" data-end="503">二、账号与配置的准确性核查</h2>
+<p data-start="505" data-end="538">V2Ray配置文件的正确与否直接决定客户端能否成功连接。重点检查：</p>
+<h3 data-start="540" data-end="552">2.1 账号信息</h3>
+<ul data-start="554" data-end="720">
+<li data-start="554" data-end="595">
+<p data-start="556" data-end="595"><strong data-start="556" data-end="565">服务器地址</strong>：确认是否填写正确的IP或域名，避免输入错误或拼写遗漏。</p>
+</li>
+<li data-start="596" data-end="621">
+<p data-start="598" data-end="621"><strong data-start="598" data-end="605">端口号</strong>：确保端口号对应服务器设置。</p>
+</li>
+<li data-start="622" data-end="669">
+<p data-start="624" data-end="669"><strong data-start="624" data-end="638">用户ID（UUID）</strong>：严格按照服务商提供的UUID填写，避免误填成普通字符串。</p>
+</li>
+<li data-start="670" data-end="720">
+<p data-start="672" data-end="720"><strong data-start="672" data-end="680">协议类型</strong>：目前V2Ray支持的协议主要有vmess和vless，务必与服务商配置相匹配。</p>
+</li>
+</ul>
+<h3 data-start="722" data-end="736">2.2 配置文件格式</h3>
+<ul data-start="738" data-end="827">
+<li data-start="738" data-end="786">
+<p data-start="740" data-end="786">V2Ray配置采用JSON格式，一旦格式错误，如缺少括号、逗号，都会导致客户端启动失败。</p>
+</li>
+<li data-start="787" data-end="827">
+<p data-start="789" data-end="827">使用在线JSON校验工具或编辑器自带校验功能，确保配置文件符合JSON规范。</p>
+</li>
+</ul>
+<hr data-start="829" data-end="832">
+<h2 data-start="834" data-end="847">三、网络连接状态检查</h2>
+<p data-start="849" data-end="887">V2Ray依赖稳定的网络环境，若手机网络不畅或受限，会直接导致无法正常使用。</p>
+<ul data-start="889" data-end="1039">
+<li data-start="889" data-end="939">
+<p data-start="891" data-end="939"><strong data-start="891" data-end="899">网络质量</strong><br data-start="899" data-end="902">
+尽量使用稳定的WiFi或4G/5G网络，避免信号差、频繁切换网络环境。</p>
+</li>
+<li data-start="941" data-end="997">
+<p data-start="943" data-end="997"><strong data-start="943" data-end="955">防火墙或安全软件</strong><br data-start="955" data-end="958">
+手机自带或第三方安全软件有时会阻止V2Ray应用联网，务必确认无相关限制。</p>
+</li>
+<li data-start="999" data-end="1039">
+<p data-start="1001" data-end="1039"><strong data-start="1001" data-end="1014">飞行模式与数据开关</strong><br data-start="1014" data-end="1017">
+确认手机未处于飞行模式，且数据开关开启。</p>
+</li>
+</ul>
+<hr data-start="1041" data-end="1044">
+<h2 data-start="1046" data-end="1057">四、应用权限设置</h2>
+<p data-start="1059" data-end="1101">现代手机系统对应用权限管理日益严格。V2Ray若缺少必要权限，也会导致无法正常联网。</p>
+<ul data-start="1103" data-end="1233">
+<li data-start="1103" data-end="1139">
+<p data-start="1105" data-end="1139"><strong data-start="1105" data-end="1115">网络访问权限</strong><br data-start="1115" data-end="1118">
+确认V2Ray客户端有访问网络的权限。</p>
+</li>
+<li data-start="1141" data-end="1179">
+<p data-start="1143" data-end="1179"><strong data-start="1143" data-end="1153">后台运行权限</strong><br data-start="1153" data-end="1156">
+保证应用在后台能持续运行，避免被系统杀死。</p>
+</li>
+<li data-start="1181" data-end="1233">
+<p data-start="1183" data-end="1233"><strong data-start="1183" data-end="1192">自启动权限</strong><br data-start="1192" data-end="1195">
+部分手机厂商默认关闭应用自启动，需手动开启，确保V2Ray可以自动启动。</p>
+</li>
+</ul>
+<hr data-start="1235" data-end="1238">
+<h2 data-start="1240" data-end="1254">五、服务器状态与连通性</h2>
+<p data-start="1256" data-end="1279">服务器端稳定与否同样关键，用户应进行以下排查：</p>
+<ul data-start="1281" data-end="1405">
+<li data-start="1281" data-end="1329">
+<p data-start="1283" data-end="1329"><strong data-start="1283" data-end="1293">Ping测试</strong><br data-start="1293" data-end="1296">
+使用手机的网络工具或电脑Ping服务器IP，确认网络通路正常。</p>
+</li>
+<li data-start="1331" data-end="1369">
+<p data-start="1333" data-end="1369"><strong data-start="1333" data-end="1342">切换服务器</strong><br data-start="1342" data-end="1345">
+试用不同服务器节点，判断是否为单一节点故障。</p>
+</li>
+<li data-start="1371" data-end="1405">
+<p data-start="1373" data-end="1405"><strong data-start="1373" data-end="1382">服务器负载</strong><br data-start="1382" data-end="1385">
+服务器过载或限速也可能影响连接质量。</p>
+</li>
+</ul>
+<hr data-start="1407" data-end="1410">
+<h2 data-start="1412" data-end="1424">六、版本更新及维护</h2>
+<p data-start="1426" data-end="1450">使用过时的客户端或配置可能导致兼容性和安全问题。</p>
+<ul data-start="1452" data-end="1534">
+<li data-start="1452" data-end="1497">
+<p data-start="1454" data-end="1497"><strong data-start="1454" data-end="1463">客户端更新</strong><br data-start="1463" data-end="1466">
+关注官方渠道，及时升级至最新版，享受更好的性能和安全修复。</p>
+</li>
+<li data-start="1499" data-end="1534">
+<p data-start="1501" data-end="1534"><strong data-start="1501" data-end="1509">配置更新</strong><br data-start="1509" data-end="1512">
+保持配置订阅链接有效，定期刷新节点信息。</p>
+</li>
+</ul>
+<hr data-start="1536" data-end="1539">
+<h2 data-start="1541" data-end="1557">七、常见问题答疑（FAQ）</h2>
+<p data-start="1559" data-end="1627"><strong data-start="1559" data-end="1582">Q1：为什么手机端V2Ray连接不上？</strong><br data-start="1582" data-end="1585">
+<strong data-start="1585" data-end="1591">A1</strong>：大多因配置错误、网络不稳定或权限设置不当导致。建议按本文步骤逐一排查。</p>
+<p data-start="1629" data-end="1684"><strong data-start="1629" data-end="1648">Q2：V2Ray配置怎么更新？</strong><br data-start="1648" data-end="1651">
+<strong data-start="1651" data-end="1657">A2</strong>：一般通过服务商提供的订阅链接自动更新，手动导入也可。</p>
+<p data-start="1686" data-end="1755"><strong data-start="1686" data-end="1714">Q3：能否在多台设备同时使用一个V2Ray账号？</strong><br data-start="1714" data-end="1717">
+<strong data-start="1717" data-end="1723">A3</strong>：多数服务支持多设备使用，但连接质量可能因带宽和服务器限制下降。</p>
+<p data-start="1757" data-end="1809"><strong data-start="1757" data-end="1779">Q4：使用V2Ray会有额外费用吗？</strong><br data-start="1779" data-end="1782">
+<strong data-start="1782" data-end="1788">A4</strong>：工具本身免费，但服务器和流量使用需付费。</p>
+<hr data-start="1811" data-end="1814">
+<h2 data-start="1816" data-end="1823">八、总结</h2>
+<p data-start="1825" data-end="1946">手机端V2Ray的使用体验虽强大，但也存在较多变量。面对无法使用的问题，用户需从基础安装、配置准确、网络状态、权限授权和服务器连通性等多维度细致排查。配合及时更新和合理使用，完全可以保障V2Ray在手机上的流畅运行，助力安全、高效的网络访问。</p>
+<p data-start="1948" data-end="2012">本篇文章旨在为广大V2Ray用户提供一份详尽且实用的手机端故障解决方案，期望帮助大家轻松跨越网络限制，享受自由畅快的互联网世界。</p>
+<hr data-start="2014" data-end="2017">
+<h3 data-start="2019" data-end="2029">语言精彩点评</h3>
+<p data-start="2031" data-end="2190" data-is-last-node="" data-is-only-node="">本文通过结构化的逻辑和详实的内容，将复杂的手机端V2Ray使用问题拆解成具体、可操作的步骤，极大降低了技术门槛。语言简洁明快，结合实例与操作指引，读者易于理解和实践。问答环节精准回应用户焦虑，增强实用性和互动感。整体行文自然流畅，既专业又不失亲切，极大提升了读者的阅读体验和信心。此文无疑是移动科学上网用户的必读佳作。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-117455.htm">LEDE路由器科学上网全攻略：从入门到实战详解</a></p>
+                                        <p>下一个：<a href="/news/article-118071.htm">深度剖析：clashR与clash的异同及应用指南</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-112509.htm" title="苹果用户科学上网终极指南：Clash iOS全解析与实用配置技巧">苹果用户科学上网终极指南：Clash iOS全解析与实用配置技巧</a></li>
+                        <li class="py-2"><a href="/news/article-118690.htm" title="V2Ray游戏加速器搭建全攻略：安装、配置与优化实战指南">V2Ray游戏加速器搭建全攻略：安装、配置与优化实战指南</a></li>
+                        <li class="py-2"><a href="/news/article-118071.htm" title="深度剖析：clashR与clash的异同及应用指南">深度剖析：clashR与clash的异同及应用指南</a></li>
+                        <li class="py-2"><a href="/news/article-116181.htm" title="从小白到进阶：V2Ray快速导入全攻略（含配置细节与问题排查）">从小白到进阶：V2Ray快速导入全攻略（含配置细节与问题排查）</a></li>
+                        <li class="py-2"><a href="/news/article-116494.htm" title="摆脱束缚：一文读懂简洁科学上网的正确姿势">摆脱束缚：一文读懂简洁科学上网的正确姿势</a></li>
+                        <li class="py-2"><a href="/news/article-111721.htm" title="手机科学上网全攻略：突破限制与保障隐私的最佳工具与技巧">手机科学上网全攻略：突破限制与保障隐私的最佳工具与技巧</a></li>
+                        <li class="py-2"><a href="/news/article-115878.htm" title="面对“封锁时代”：科学上网为何越来越难，我们还能做些什么？">面对“封锁时代”：科学上网为何越来越难，我们还能做些什么？</a></li>
+                        <li class="py-2"><a href="/news/article-112856.htm" title="玩转网络自由：通过Play商店实现科学上网的终极指南">玩转网络自由：通过Play商店实现科学上网的终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-114953.htm" title="鱼跃科学上网：全面指南与深度评测">鱼跃科学上网：全面指南与深度评测</a></li>
+                        <li class="py-2"><a href="/news/article-111004.htm" title="深度解析：Quantumult 出现内容无效的原因与全面解决方案">深度解析：Quantumult 出现内容无效的原因与全面解决方案</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!-- End About -->
+    <!--========== END PAGE LAYOUT ==========-->
+        <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div class="content container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <p class="margin-b-0">免费ClashN节点 订阅教程网 版权所有 Powered by WordPress</p>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- CORE PLUGINS -->
+    <script src="/assets/website/js/frontend/vlessgithub/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.easing.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.parallax.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.appear.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script src="/assets/website/js/frontend/vlessgithub/layout.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/components/progress-bar.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/components/swiper.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/components/wow.min.js" type="text/javascript"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+<!-- END BODY -->
+
+</html>
