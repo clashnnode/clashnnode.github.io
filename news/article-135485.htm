@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN" class="no-js">
+<!-- BEGIN HEAD -->
+
+<head>
+        <link rel="canonical" href="https://clashnnode.github.io/news/article-135485.htm" />
+    <meta charset="utf-8" />
+    <title>Deepin系统下的Clash代理工具完整安装与配置指南</title>
+        <meta name="description" content="引言：为什么选择Clash？  在当今互联网环境中，科学上网工具已成为许多技术从业者和普通用户的日常必需品。作为一款开源的跨平台代理工具，Clash以其高度可定制性、强大的规则引擎和稳定的性能在众多同" />
+        <link rel="icon" href="/assets/website/img/vlessgithub/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费ClashN节点 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clashnnode.github.io/news/article-135485.htm" />
+    <meta property="og:site_name" content="免费ClashN节点 订阅教程网" />
+    <meta property="og:title" content="Deepin系统下的Clash代理工具完整安装与配置指南" />
+    <meta property="og:image" content="https://clashnnode.github.io/uploads/20240903/6d987a60b168e6eb69348722283624bc.webp" />
+        <meta property="og:release_date" content="2025-07-18T08:31:26" />
+    <meta property="og:updated_time" content="2025-07-18T08:31:26" />
+        <meta property="og:description" content="引言：为什么选择Clash？  在当今互联网环境中，科学上网工具已成为许多技术从业者和普通用户的日常必需品。作为一款开源的跨平台代理工具，Clash以其高度可定制性、强大的规则引擎和稳定的性能在众多同" />
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Deepin系统下的Clash代理工具完整安装与配置指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="/assets/website/js/frontend/vlessgithub/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/website/js/frontend/vlessgithub/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="/assets/website/css/vlessgithub/animate.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/vlessgithub/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <!-- THEME STYLES -->
+    <link href="/assets/website/css/vlessgithub/layout.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-97EYDJXJDJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-97EYDJXJDJ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+
+<body id="body" data-spy="scroll" data-target=".header" data-page="detail">
+        <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="logo-wrap" href="/">
+                                                <span>免费ClashN节点</span>
+                                                </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-right">
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/">首页</a></li>
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/paid-subscribe/">推荐机场</a></li>
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/news/">新闻资讯</a></li>
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/client.htm">客户端</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+    <!--========== SLIDER ==========-->
+    <div class="promo-block category">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 sm-margin-b-60">
+                    <div class="margin-b-30">
+                        <h1 class="promo-block-title">Deepin系统下的Clash代理工具完整安装与配置指南</h1>
+                        <p class="promo-block-text">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="promo-block-img-wrap">
+                        <img class="promo-block-img img-responsive" src="/assets/website/img/vlessgithub/mockup/avatar-01.png" align="Avatar">
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!--========== SLIDER ==========-->
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- About -->
+    <div id="about">
+        <div class="container content-lg">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      <h2>引言：为什么选择Clash？</h2>  <p>在当今互联网环境中，科学上网工具已成为许多技术从业者和普通用户的日常必需品。作为一款开源的跨平台代理工具，Clash以其高度可定制性、强大的规则引擎和稳定的性能在众多同类产品中脱颖而出。特别是在Deepin这样基于Linux的国产操作系统中，Clash能够完美兼容并提供流畅的使用体验。本文将带领你从零开始，在Deepin系统上完成Clash的完整安装与配置过程。</p>  <h2>准备工作：系统环境检查</h2>  <p>在开始安装Clash之前，我们需要确保Deepin系统处于最佳状态。打开终端（快捷键Ctrl+Alt+T），执行以下命令更新系统：</p>  <p><code>bash sudo apt update &amp;&amp; sudo apt upgrade -y</code></p>  <p>这个步骤至关重要，它能确保我们拥有最新的系统补丁和软件包，避免因版本不兼容导致的问题。更新过程可能需要几分钟时间，取决于你的网络速度和系统更新量。</p>  <h2>获取Clash源代码</h2>  <p>Deepin作为Debian系发行版，拥有强大的包管理工具，但Clash并未被收录在官方仓库中。因此我们需要从GitHub获取源代码自行编译。首先确保已安装Git版本控制工具：</p>  <p><code>bash sudo apt install git -y</code></p>  <p>接着克隆Dreamacro维护的Clash官方仓库：</p>  <p><code>bash git clone https://github.com/Dreamacro/clash.git</code></p>  <p>克隆完成后，你会得到一个名为"clash"的目录，这里包含了Clash的全部源代码。值得一提的是，直接从源码编译可以确保我们获得最新功能，同时也能够审查代码安全性。</p>  <h2>编译安装Clash</h2>  <p>进入Clash源代码目录并检查依赖：</p>  <p><code>bash cd clash sudo apt install wget curl build-essential -y</code></p>  <p>这些基础工具链将帮助我们完成编译过程。接下来执行构建命令：</p>  <p><code>bash make build</code></p>  <p>编译过程视机器性能可能需要1-5分钟。完成后，你会在./bin目录下找到生成的可执行文件。为了便于系统范围使用，建议将二进制文件移动到/usr/local/bin：</p>  <p><code>bash sudo cp ./bin/clash /usr/local/bin/</code></p>  <h2>配置Clash运行环境</h2>  <p>Clash需要一个专门的配置目录来存放其配置文件和必要数据。创建配置目录结构：</p>  <p><code>bash mkdir -p ~/.config/clash</code></p>  <p>这个隐藏目录将存放Clash的核心配置文件。值得注意的是，在Linux系统中，以点(.)开头的目录默认是隐藏的，需要使用ls -a命令才能查看。</p>  <h2>获取并配置Clash配置文件</h2>  <p>Clash的核心功能依赖于配置文件，通常命名为config.yaml。你可以从以下渠道获取：</p>  <ol> <li>自建配置：手动编写YAML格式配置文件</li> <li>订阅服务：许多服务提供商提供Clash格式的订阅链接</li> <li>社区分享：技术社区中常有用户分享配置模板</li> </ol>  <p>将获得的config.yaml文件放置于~/.config/clash/目录下。一个典型的目录结构如下：</p>  <p><code>~/.config/clash/ ├── config.yaml ├── Country.mmdb └── rules.yaml</code></p>  <p>特别提醒：Country.mmdb是IP地理数据库文件，Clash依赖它进行基于地理位置的规则匹配。如果缺失，Clash会自动下载，但国内网络环境下可能会失败，建议手动下载放置。</p>  <h2>启动Clash服务</h2>  <p>完成基本配置后，我们可以尝试启动Clash：</p>  <p><code>bash clash -d ~/.config/clash/</code></p>  <p>-d参数指定配置目录位置。如果一切正常，你将在终端看到Clash的启动日志，包括加载的规则数量、代理服务器信息等。</p>  <p>为了让Clash在后台持续运行，可以使用nohup配合&amp;：</p>  <p><code>bash nohup clash -d ~/.config/clash/ &gt; /dev/null 2&gt;&amp;1 &amp;</code></p>  <h2>系统代理设置</h2>  <p>Clash运行后，我们需要配置系统代理以使其生效。Deepin系统提供了图形化的网络设置：</p>  <ol> <li>打开"控制中心" > "网络" > "网络代理"</li> <li>选择"手动"配置</li> <li>在HTTP/HTTPS/SOCKS代理中填入：  <ul> <li>地址：127.0.0.1</li> <li>端口：7890（Clash默认监听端口）</li> </ul></li> </ol>  <p>或者通过命令行快速设置：</p>  <p><code>bash gsettings set org.gnome.system.proxy mode 'manual' gsettings set org.gnome.system.proxy.http host '127.0.0.1' gsettings set org.gnome.system.proxy.http port 7890</code></p>  <h2>进阶配置：规则与策略组</h2>  <p>Clash的强大之处在于其灵活的规则系统。打开config.yaml文件，你可以看到类似以下内容：</p>  <p><code>yaml rules:   - DOMAIN-SUFFIX,google.com,Proxy   - DOMAIN-KEYWORD,facebook,Proxy   - IP-CIDR,8.8.8.8/32,Proxy   - GEOIP,CN,DIRECT   - MATCH,Proxy</code></p>  <p>这些规则定义了不同流量的走向。你可以根据需求添加或修改规则，例如：</p>  <ul> <li>让所有.edu.cn域名直连</li> <li>将视频流量导向特定节点</li> <li>根据访问目标自动选择最优代理</li> </ul>  <p>策略组(Proxy Groups)则允许你创建代理集合，实现负载均衡或自动切换：</p>  <p><code>yaml proxy-groups:   - name: Auto     type: url-test     proxies: [ "ServerA", "ServerB", "ServerC" ]     url: 'http://www.gstatic.com/generate_204'     interval: 300</code></p>  <h2>设置系统服务与开机自启</h2>  <p>为了确保Clash在系统启动时自动运行，我们可以创建systemd服务单元：</p>  <p><code>bash sudo nano /etc/systemd/system/clash.service</code></p>  <p>添加以下内容：</p>  <p>```ini [Unit] Description=Clash daemon After=network.target</p>  <p>[Service] Type=simple User=your<em>username ExecStart=/usr/local/bin/clash -d /home/your</em>username/.config/clash/ Restart=on-failure</p>  <p>[Install] WantedBy=multi-user.target ```</p>  <p>替换your_username为你的实际用户名。然后启用并启动服务：</p>  <p><code>bash sudo systemctl enable clash sudo systemctl start clash</code></p>  <p>现在Clash将作为系统服务运行，即使重启也会自动启动。</p>  <h2>图形界面管理（可选）</h2>  <p>对于习惯GUI操作的用户，可以考虑安装Clash的图形前端，如Clash for Windows的Linux版本或第三方开发的Clash Dashboard。以Clash Dashboard为例：</p>  <p><code>bash git clone https://github.com/Dreamacro/clash-dashboard.git cd clash-dashboard python3 -m http.server 8000</code></p>  <p>然后在浏览器访问http://localhost:8000即可看到Web管理界面。</p>  <h2>测试与验证</h2>  <p>完成所有配置后，建议进行以下测试：</p>  <ol> <li><p>连通性测试： <code>bash curl -x http://127.0.0.1:7890 https://www.google.com</code></p></li> <li><p>IP检查： <code>bash curl -x http://127.0.0.1:7890 https://api.ipify.org</code></p></li> <li><p>速度测试： <code>bash speedtest-cli --proxy http://127.0.0.1:7890</code></p></li> </ol>  <h2>常见问题解决</h2>  <ol> <li><p><strong>端口冲突</strong>：如果7890端口被占用，可以在config.yaml中修改： <code>yaml port: 7890 socks-port: 7891</code></p></li> <li><p><strong>更新订阅</strong>：定期更新订阅链接获取最新节点： <code>bash wget -O ~/.config/clash/config.yaml "你的订阅链接" systemctl restart clash</code></p></li> <li><p><strong>日志查看</strong>：排查问题时可以查看详细日志： <code>bash journalctl -u clash -f</code></p></li> </ol>  <h2>安全注意事项</h2>  <ol> <li>仅从可信来源获取配置文件</li> <li>定期更新Clash版本以获取安全补丁</li> <li>不要随意分享你的订阅链接和配置文件</li> <li>遵守当地法律法规使用代理工具</li> </ol>  <h2>总结与点评</h2>  <p>通过本文详尽的步骤，我们完成了在Deepin系统上从源码编译安装Clash、配置系统代理、设置规则策略到创建系统服务的全过程。Clash作为一款高度可定制的代理工具，其优势主要体现在：</p>  <ol> <li><strong>灵活的规则系统</strong>：支持基于域名、IP、地理位置等多种条件的流量路由</li> <li><strong>强大的策略组</strong>：可实现负载均衡、故障转移等高级功能</li> <li><strong>跨平台一致性</strong>：配置文件在不同设备间可无缝迁移</li> <li><strong>活跃的社区支持</strong>：丰富的第三方工具和插件生态</li> </ol>  <p>Deepin系统作为国产操作系统的优秀代表，与Clash的结合展现了Linux桌面环境的强大可定制性。整个安装配置过程虽然有一定技术门槛，但遵循本指南一步步操作，大多数用户都能成功部署。</p>  <p>特别值得一提的是，Clash的配置文件采用YAML格式，结构清晰易读，既适合新手理解基础配置，也能满足高级用户的复杂需求。这种平衡设计是Clash在技术社区广受好评的重要原因。</p>  <p>最后提醒使用者，技术工具本身中立，关键在于如何使用。希望本文读者能合理利用Clash提升工作效率，同时遵守网络规范，共同维护良好的互联网环境。</p>                 </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-135115.htm">MetaMask在中国必须科学上网吗？深度解析与完整使用攻略</a></p>
+                                        <p>下一个：<a href="/news/article-135643.htm">突破网络限制：QQ科学上网插件完整使用指南与深度解析</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-132519.htm" title="V2Ray时间同步全攻略：守护隐私的隐形时钟">V2Ray时间同步全攻略：守护隐私的隐形时钟</a></li>
+                        <li class="py-2"><a href="/news/article-134407.htm" title="V2Ray节点抓取全攻略：从入门到精通的高效科学上网指南">V2Ray节点抓取全攻略：从入门到精通的高效科学上网指南</a></li>
+                        <li class="py-2"><a href="/news/article-126633.htm" title="突破边界：全面解析云科学上网的原理、优势与实战搭建指南">突破边界：全面解析云科学上网的原理、优势与实战搭建指南</a></li>
+                        <li class="py-2"><a href="/news/article-136743.htm" title="安卓手机hosts文件科学上网全攻略：从原理到实战">安卓手机hosts文件科学上网全攻略：从原理到实战</a></li>
+                        <li class="py-2"><a href="/news/article-130053.htm" title="Cloudlink科学上网全攻略：解锁全球网络自由的终极指南">Cloudlink科学上网全攻略：解锁全球网络自由的终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-124665.htm" title="科学上网收费SS全指南：解锁网络自由与隐私保护的终极选择">科学上网收费SS全指南：解锁网络自由与隐私保护的终极选择</a></li>
+                        <li class="py-2"><a href="/news/article-130407.htm" title="突破数字边界：移动科学上网如何重塑信息自由与隐私安全">突破数字边界：移动科学上网如何重塑信息自由与隐私安全</a></li>
+                        <li class="py-2"><a href="/news/article-125641.htm" title="解锁网络自由：iOS设备上轻松导入V2Ray链接的完整指南">解锁网络自由：iOS设备上轻松导入V2Ray链接的完整指南</a></li>
+                        <li class="py-2"><a href="/news/article-137101.htm" title="全面掌握V2Ray拓荒者订阅：从入门到精通的完整指南">全面掌握V2Ray拓荒者订阅：从入门到精通的完整指南</a></li>
+                        <li class="py-2"><a href="/news/article-135643.htm" title="突破网络限制：QQ科学上网插件完整使用指南与深度解析">突破网络限制：QQ科学上网插件完整使用指南与深度解析</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2025-07/" title="2025-07 归档">2025-07</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2025-06/" title="2025-06 归档">2025-06</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!-- End About -->
+    <!--========== END PAGE LAYOUT ==========-->
+        <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div class="content container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <p class="margin-b-0">免费ClashN节点 订阅教程网 版权所有 Powered by WordPress</p>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- CORE PLUGINS -->
+    <script src="/assets/website/js/frontend/vlessgithub/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.easing.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.parallax.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/jquery.appear.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script src="/assets/website/js/frontend/vlessgithub/layout.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/components/progress-bar.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/components/swiper.min.js" type="text/javascript"></script>
+    <script src="/assets/website/js/frontend/vlessgithub/components/wow.min.js" type="text/javascript"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+<!-- END BODY -->
+
+</html>
