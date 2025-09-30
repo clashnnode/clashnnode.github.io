@@ -89,6 +89,7 @@
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
                                                         <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/">首页</a></li>
+                                                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/free-nodes/">免费节点</a></li>
                                                         <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/paid-subscribe/">推荐机场</a></li>
                                                         <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/news/">新闻资讯</a></li>
                                                         <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/client.htm">客户端</a></li>
@@ -107,7 +108,7 @@
             <div class="row">
                 <div class="col-sm-6 sm-margin-b-60">
                     <div class="margin-b-30">
-                        <h1 class="promo-block-title">Clash天空 - 8月19日18.3M/S|免费SSR/Clash/V2ray/Shadowrocket订阅机场节点</h1>
+                        <h1 class="promo-block-title">Clash天空 - 8月19日18.3M/S|免费SSR/Clash节点/V2ray节点/Shadowrocket订阅机场节点</h1>
                         <p class="promo-block-text">
                             <a href="/">首页</a> / <a href="/free-nodes/">免费节点</a> / 正文
                         </p>
@@ -177,8 +178,8 @@ opkg <span class="token function">install</span> luci-app-clash</pre></div><h2>�
   <span class="token key atrule">encrypted-dns</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></pre></div></li><li><p>定期清理日志：</p><div class="md-code-block"><div class="md-code-block-banner-wrap"><div class="md-code-block-banner"><div class="md-code-block-infostring">bash</div><div class="md-code-block-action"><div class="ds-markdown-code-copy-button">复制</div></div></div></div><pre><span class="token function">logrotate</span> /etc/logrotate.d/clash</pre></div></li><li><p>配置自动备份：</p><div class="md-code-block"><div class="md-code-block-banner-wrap"><div class="md-code-block-banner"><div class="md-code-block-infostring">bash</div><div class="md-code-block-action"><div class="ds-markdown-code-copy-button">复制</div></div></div></div><pre><span class="token function">tar</span> <span class="token parameter variable">-czf</span> /backup/clash_<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%F<span class="token variable">)</span></span>.tar.gz /etc/clash</pre></div></li></ol><h2>专家点评与进阶建议</h2><p>Luci与Clash的组合堪称OpenWRT生态中的"黄金搭档"。从技术实现来看，这种方案有三大突出优势：</p><ol start="1"><li><p><strong>深度系统集成</strong>：Clash作为系统服务运行，能够接管所有网络流量，包括那些不支持代理设置的传统IoT设备。实测表明，这种方案的兼容性比传统方案提升60%以上。</p></li><li><p><strong>精细流量控制</strong>：基于Luci的可视化规则编辑器，用户可以实现应用层级的流量管理。例如，可以轻松设置"仅视频流量走代理"或"工作时段自动切换节点"等复杂规则。</p></li><li><p><strong>企业级稳定性</strong>：作为系统服务运行的Clash，其平均无故障时间(MTBF)达到3000小时以上，远超客户端方案。</p></li></ol><p>对于进阶用户，建议探索以下方向：</p><ul><li><p><strong>多WAN负载均衡</strong>：结合mwan3实现代理链路的自动切换</p></li><li><p><strong>QoS整合</strong>：使用sqm-qos管理代理流量的优先级</p></li><li><p><strong>AI智能路由</strong>：通过机器学习算法自动选择最优节点</p></li></ul><p>无论是家庭用户还是企业环境，这套方案都能提供专业级的网络代理体验。通过本文的详细指导，您应该已经掌握了从基础安装到高级调优的全套技能。建议在实际部署中，根据具体网络环境和需求进行适当调整，让技术真正服务于您的网络自由。</p>                </div>
                 <div class="clearfix"></div>
                 <div class="col-md-12 mt-5">
-                                        <p>上一个：<a href="/free-nodes/2025-8-18-node-share-links.htm">Clash天空 - 8月18日20.5M/S|免费SSR/V2ray/Shadowrocket/Clash订阅机场节点</a></p>
-                                        <p>下一个：<a href="/free-nodes/2025-8-20-node-share-links.htm">Clash天空 - 8月20日21.3M/S|免费V2ray/Shadowrocket/Clash/SSR订阅机场节点</a></p>
+                                        <p>上一个：<a href="/free-nodes/2025-8-18-node-share-links.htm">Clash天空 - 8月18日20.5M/S|免费SSR/V2ray节点/Shadowrocket节点/Clash订阅机场节点</a></p>
+                                        <p>下一个：<a href="/free-nodes/2025-8-20-node-share-links.htm">Clash天空 - 8月20日21.3M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR订阅机场节点</a></p>
                                     </div>
                                 <div class="panel panel-default mt-5">
                     <div class="panel-heading">
@@ -186,16 +187,16 @@ opkg <span class="token function">install</span> luci-app-clash</pre></div><h2>�
                     </div>
                     <div class="panel-body">
                         <ul class="p-0 x-0">
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-18-node-share-links.htm">Clash天空 - 8月18日20.5M/S|免费SSR/V2ray/Shadowrocket/Clash订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-17-vless-node-share.htm">Clash天空 - 8月17日20.5M/S|免费V2ray/Shadowrocket/Clash/SSR订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-16-vless-node.htm">Clash天空 - 8月16日21M/S|免费V2ray/Clash/SSR/Shadowrocket订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-15-vless-windows.htm">Clash天空 - 8月15日21.1M/S|免费SSR/V2ray/Shadowrocket/Clash订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-14-free-node-subscribe.htm">Clash天空 - 8月14日20.7M/S|免费V2ray/Shadowrocket/Clash/SSR订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-13-free-node-subscribe-links.htm">Clash天空 - 8月13日20.1M/S|免费SSR/Clash/Shadowrocket/V2ray订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-12-vless-node-share.htm">Clash天空 - 8月12日18M/S|免费V2ray/Shadowrocket/SSR/Clash订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-11-latest-vless-node.htm">Clash天空 - 8月11日18M/S|免费Clash/SSR/V2ray/Shadowrocket订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-10-vless-node.htm">Clash天空 - 8月10日18.2M/S|免费SSR/V2ray/Clash/Shadowrocket订阅机场节点</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-9-latest-vless-node.htm">Clash天空 - 8月9日21.5M/S|免费V2ray/SSR/Shadowrocket/Clash订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-18-node-share-links.htm">Clash天空 - 8月18日20.5M/S|免费SSR/V2ray节点/Shadowrocket节点/Clash订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-17-vless-node-share.htm">Clash天空 - 8月17日20.5M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-16-vless-node.htm">Clash天空 - 8月16日21M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-15-vless-windows.htm">Clash天空 - 8月15日21.1M/S|免费SSR/V2ray节点/Shadowrocket节点/Clash订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-14-free-node-subscribe.htm">Clash天空 - 8月14日20.7M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-13-free-node-subscribe-links.htm">Clash天空 - 8月13日20.1M/S|免费SSR/Clash节点/Shadowrocket节点/V2ray订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-12-vless-node-share.htm">Clash天空 - 8月12日18M/S|免费V2ray节点/Shadowrocket节点/SSR/Clash订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-11-latest-vless-node.htm">Clash天空 - 8月11日18M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-10-vless-node.htm">Clash天空 - 8月10日18.2M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket订阅机场节点</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-9-latest-vless-node.htm">Clash天空 - 8月9日21.5M/S|免费V2ray节点/SSR/Shadowrocket节点/Clash订阅机场节点</a></li>
                                                     </ul>
                     </div>
                 </div>
@@ -207,16 +208,16 @@ opkg <span class="token function">install</span> luci-app-clash</pre></div><h2>�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-7-18-free-subscribe-node.htm" title="Clash天空 - 7月18日19.4M/S|免费Clash/SSR/V2ray/Shadowrocket订阅机场节点">Clash天空 - 7月18日19.4M/S|免费Clash/SSR/V2ray/Shadowrocket订阅机场节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-1-vless-node-github.htm" title="Clash天空 - 8月1日20.6M/S|免费Shadowrocket/V2ray/Clash/SSR订阅机场节点">Clash天空 - 8月1日20.6M/S|免费Shadowrocket/V2ray/Clash/SSR订阅机场节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-7-12-vless-github.htm" title="Clash天空 - 7月12日21.9M/S|免费Clash/V2ray/SSR/Shadowrocket订阅机场节点">Clash天空 - 7月12日21.9M/S|免费Clash/V2ray/SSR/Shadowrocket订阅机场节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-7-vless-node-github.htm" title="Clash天空 - 8月7日21.2M/S|免费SSR/Shadowrocket/Clash/V2ray订阅机场节点">Clash天空 - 8月7日21.2M/S|免费SSR/Shadowrocket/Clash/V2ray订阅机场节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-7-22-vless-github.htm" title="Clash天空 - 7月22日19.3M/S|免费V2ray/SSR/Clash/Shadowrocket订阅机场节点">Clash天空 - 7月22日19.3M/S|免费V2ray/SSR/Clash/Shadowrocket订阅机场节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-8-vless-node.htm" title="Clash天空 - 8月8日21.1M/S|免费V2ray/SSR/Shadowrocket/Clash订阅机场节点">Clash天空 - 8月8日21.1M/S|免费V2ray/SSR/Shadowrocket/Clash订阅机场节点</a></li>
-                        <li class="py-2"><a href="/news/article-148172.htm" title="灯泡与科学上网：智能家居中的隐秘桥梁">灯泡与科学上网：智能家居中的隐秘桥梁</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-19-node-share-links.htm" title="Clash天空 - 8月19日18.3M/S|免费SSR/Clash/V2ray/Shadowrocket订阅机场节点">Clash天空 - 8月19日18.3M/S|免费SSR/Clash/V2ray/Shadowrocket订阅机场节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-7-16-node-share.htm" title="Clash天空 - 7月16日19.3M/S|免费SSR/Shadowrocket/Clash/V2ray订阅机场节点">Clash天空 - 7月16日19.3M/S|免费SSR/Shadowrocket/Clash/V2ray订阅机场节点</a></li>
-                        <li class="py-2"><a href="/news/article-147879.htm" title="V2RayNG代理共享全攻略：从配置到安全优化的完整指南">V2RayNG代理共享全攻略：从配置到安全优化的完整指南</a></li>
+                        <li class="py-2"><a href="/news/article-152379.htm" title="第一次科学上网全攻略：从零开始解锁全球互联网">第一次科学上网全攻略：从零开始解锁全球互联网</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-14-free-subscribe-node.htm" title="免费ClashN节点 - 9月14日21.2M/S|免费Shadowrocket节点/SSR/Clash节点/V2ray订阅节点分享">免费ClashN节点 - 9月14日21.2M/S|免费Shadowrocket节点/SSR/Clash节点/V2ray订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-16-vless-node.htm" title="Clash天空 - 8月16日21M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket订阅机场节点">Clash天空 - 8月16日21M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket订阅机场节点</a></li>
+                        <li class="py-2"><a href="/news/article-154937.htm" title="V2Ray绕行模式深度解析：原理、应用与实战配置全指南">V2Ray绕行模式深度解析：原理、应用与实战配置全指南</a></li>
+                        <li class="py-2"><a href="/news/article-149645.htm" title="松果云Clash全面使用手册：从零基础到高阶配置全解析">松果云Clash全面使用手册：从零基础到高阶配置全解析</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-6-free-vless-node.htm" title="Clash天空 - 8月6日20.7M/S|免费SSR/V2ray节点/Shadowrocket节点/Clash订阅机场节点">Clash天空 - 8月6日20.7M/S|免费SSR/V2ray节点/Shadowrocket节点/Clash订阅机场节点</a></li>
+                        <li class="py-2"><a href="/news/article-152743.htm" title="突破数字边界：全方位指南实现安全稳定的科学上网">突破数字边界：全方位指南实现安全稳定的科学上网</a></li>
+                        <li class="py-2"><a href="/news/article-154204.htm" title="玩转Quantumult X定时脚本：从入门到精通的完整指南">玩转Quantumult X定时脚本：从入门到精通的完整指南</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-23-node-share-links.htm" title="免费ClashN节点 - 9月23日20.7M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR订阅节点分享">免费ClashN节点 - 9月23日20.7M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-7-vless-node-github.htm" title="Clash天空 - 8月7日21.2M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray订阅机场节点">Clash天空 - 8月7日21.2M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray订阅机场节点</a></li>
                     </ul>
     </div>
 </div>
@@ -228,10 +229,10 @@ opkg <span class="token function">install</span> luci-app-clash</pre></div><h2>�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">25</span> <a href="/date/2025-07/" title="2025-07 归档">2025-07</a></h4>
+                <h4><span class="badge" style="float: right;">25</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
             </li>
                     </ul>
     </div>
@@ -249,8 +250,10 @@ opkg <span class="token function">install</span> luci-app-clash</pre></div><h2>�
         <div class="content container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                                        <p>
+                                        <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
                                                 <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
                                                 <a href="/paid-subscribe/">推荐机场</a> |
                                                 <a href="/news/">新闻资讯</a> |
                                                 <a href="/client.htm">客户端</a> |
@@ -259,7 +262,7 @@ opkg <span class="token function">install</span> luci-app-clash</pre></div><h2>�
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                    <p class="margin-b-0">免费ClashN节点 订阅教程网 版权所有 Powered by WordPress</p>
+                                        <p class="margin-b-0">免费ClashN节点 订阅教程网 版权所有 Powered by WordPress</p>
                 </div>
             </div>
             <!--// end row -->
