@@ -298,19 +298,24 @@ Absolutely. The principles of obfuscation and traffic acceleration apply across 
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow TUN 模式适合哪些应用？</h5></div>
+    <div class="panel-heading"><h5>Mellow TUN 模式对系统全局流量的作用是什么？</h5></div>
     <div class="panel-body">
-        TUN 模式拦截系统 IP 层流量，实现全局代理。适合游戏、视频、浏览器等全局应用，保证所有流量走节点，提高网络稳定性和速度，比普通 SOCKS5 代理覆盖范围更广。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何按域名分流优化浏览器流量？</h5></div>
-    <div class="panel-body">
-        Sing-box 可通过规则匹配域名，将浏览器流量分配到最优节点。结合策略组，可保证网页访问速度和稳定性，同时优化视频和游戏等其他流量，提高整体网络体验。<hr />    </div>
+        TUN 模式拦截系统 IP 层的所有流量，实现全局代理效果。相比 SOCKS5 只作用于特定应用，TUN 能覆盖游戏、视频和浏览器流量，保证全系统科学上网体验稳定高效。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>如何检查 Clash 连接失败的日志以定位问题？</h5></div>
     <div class="panel-body">
         打开 Clash 的日志面板或查看配置目录下的 log 文件，观察报错信息如 DNS 解析失败、节点拒绝连接或 TLS 握手错误。根据关键字（例如 timeout、refused、certificate）逐项排查并比对服务器配置。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何手动设置某应用直连？</h5></div>
+    <div class="panel-body">
+        在 Clash 的规则文件中添加 PROCESS-NAME 规则，如 `PROCESS-NAME,chrome.exe,DIRECT`。保存并重启后，该应用的流量将绕过代理直连。适用于游戏或内网程序等特殊场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 在移动网络的优势是什么？</h5></div>
+    <div class="panel-body">
+        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定移动网络。结合策略组和节点切换，可提升网页浏览、视频播放和游戏连接的稳定性和流畅度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 节点健康检测如何提升网络体验？</h5></div>
@@ -323,9 +328,14 @@ Absolutely. The principles of obfuscation and traffic acceleration apply across 
         VMess 连接不稳定可能由节点延迟过高、服务器防火墙、TLS 配置错误或 ISP 丢包引起。建议测试不同传输协议（如 WS、gRPC）或切换节点，检查日志确认具体错误信息。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何手动设置某应用直连？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 与 Shadowrocket 有什么区别？</h5></div>
     <div class="panel-body">
-        在 Clash 的规则文件中添加 PROCESS-NAME 规则，如 `PROCESS-NAME,chrome.exe,DIRECT`。保存并重启后，该应用的流量将绕过代理直连。适用于游戏或内网程序等特殊场景。<hr />    </div>
+        两者都是 iOS 上的代理工具。Shadowrocket 功能更全面、更新更频繁，而 Surfboard 以轻量和快速见长。若只需简单分流与节点切换，Surfboard 足以满足日常使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 如何按域名分流优化浏览器流量？</h5></div>
+    <div class="panel-body">
+        Sing-box 可通过规则匹配域名，将浏览器流量分配到最优节点。结合策略组，可保证网页访问速度和稳定性，同时优化视频和游戏等其他流量，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的测速功能如何使用？</h5></div>
@@ -333,19 +343,9 @@ Absolutely. The principles of obfuscation and traffic acceleration apply across 
         WinXray 内置节点测速工具，可以通过延迟测试（ping）或带宽测试判断节点质量。用户只需右键节点选择“测速”即可，测试结果将显示在列表中，帮助快速挑选最佳线路。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 在移动网络的优势是什么？</h5></div>
+    <div class="panel-heading"><h5>Mellow TUN 模式适合哪些应用？</h5></div>
     <div class="panel-body">
-        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定移动网络。结合策略组和节点切换，可提升网页浏览、视频播放和游戏连接的稳定性和流畅度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow TUN 模式对系统全局流量的作用是什么？</h5></div>
-    <div class="panel-body">
-        TUN 模式拦截系统 IP 层的所有流量，实现全局代理效果。相比 SOCKS5 只作用于特定应用，TUN 能覆盖游戏、视频和浏览器流量，保证全系统科学上网体验稳定高效。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 与 Shadowrocket 有什么区别？</h5></div>
-    <div class="panel-body">
-        两者都是 iOS 上的代理工具。Shadowrocket 功能更全面、更新更频繁，而 Surfboard 以轻量和快速见长。若只需简单分流与节点切换，Surfboard 足以满足日常使用。    </div>
+        TUN 模式拦截系统 IP 层流量，实现全局代理。适合游戏、视频、浏览器等全局应用，保证所有流量走节点，提高网络稳定性和速度，比普通 SOCKS5 代理覆盖范围更广。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -374,16 +374,16 @@ Absolutely. The principles of obfuscation and traffic acceleration apply across 
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-13-vless-node-github.htm" title="免费ClashN节点 - 4月13日21.4M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 4月13日21.4M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-19-today-vless-node.htm" title="免费ClashN节点 - 4月19日19.1M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 4月19日19.1M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-21-latest-vless-node.htm" title="免费ClashN节点 - 4月21日19.1M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点分享">免费ClashN节点 - 4月21日19.1M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-22-free-node-subscribe-links.htm" title="免费ClashN节点 - 4月22日18.8M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点订阅节点分享">免费ClashN节点 - 4月22日18.8M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-10-vless-windows.htm" title="免费ClashN节点 - 4月10日20.4M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 4月10日20.4M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-16-today-vless-node.htm" title="免费ClashN节点 - 4月16日18.8M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点订阅节点分享">免费ClashN节点 - 4月16日18.8M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-30-free-vless-node.htm" title="免费ClashN节点 - 4月30日21.2M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点订阅节点分享">免费ClashN节点 - 4月30日21.2M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-25-vless-node-github.htm" title="免费ClashN节点 - 4月25日18.9M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点分享">免费ClashN节点 - 4月25日18.9M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-9-free-node-subscribe.htm" title="免费ClashN节点 - 4月9日20.4M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点订阅节点分享">免费ClashN节点 - 4月9日20.4M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-11-vless-github.htm" title="免费ClashN节点 - 4月11日20.1M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享">免费ClashN节点 - 4月11日20.1M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-19-today-vless-node.htm" title="免费ClashN节点 - 4月19日19.1M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 4月19日19.1M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-23-vless-windows.htm" title="免费ClashN节点 - 4月23日19.1M/S|免费Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点分享">免费ClashN节点 - 4月23日19.1M/S|免费Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-28-free-subscribe-node.htm" title="免费ClashN节点 - 4月28日22.2M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点订阅节点分享">免费ClashN节点 - 4月28日22.2M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-12-vless-node-github.htm" title="免费ClashN节点 - 4月12日18.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Clash节点订阅节点分享">免费ClashN节点 - 4月12日18.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-21-latest-vless-node.htm" title="免费ClashN节点 - 4月21日19.1M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点分享">免费ClashN节点 - 4月21日19.1M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-18-vless-github.htm" title="免费ClashN节点 - 4月18日19.7M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点订阅节点分享">免费ClashN节点 - 4月18日19.7M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-3-free-vless-node.htm" title="免费ClashN节点 - 5月3日21.5M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 5月3日21.5M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-node-share-links.htm" title="免费ClashN节点 - 5月6日22.5M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点订阅节点分享">免费ClashN节点 - 5月6日22.5M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点订阅节点分享</a></li>
                     </ul>
     </div>
 </div>
@@ -395,10 +395,10 @@ Absolutely. The principles of obfuscation and traffic acceleration apply across 
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">5</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
