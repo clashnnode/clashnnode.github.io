@@ -368,29 +368,14 @@ sudo bash &lt;(curl -Ls https://raw.githubusercontent.com/v2fly/fhs-install-v2ra
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统代理有何区别？</h5></div>
-    <div class="panel-body">
-        TUN 模式拦截系统 IP 层流量，实现全局代理，而系统代理通常只影响支持代理的应用。TUN 更适合游戏、视频和全局科学上网场景，保证所有流量通过节点，提高稳定性和速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
-    <div class="panel-body">
-        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray QUIC 模式适合高丢包网络吗？</h5></div>
-    <div class="panel-body">
-        QUIC 基于 UDP 协议，支持多路复用和零握手，能在高丢包和不稳定网络中减少延迟和丢包。适合视频、游戏和即时通讯等高频应用场景，提高稳定性和速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Vmess 节点可以通过 CDN 吗？</h5></div>
-    <div class="panel-body">
-        可以。Vmess 可通过 WebSocket 与 CDN 结合使用，只需将传输方式设置为 WS 并配置 host 与 path，即可实现流量中转。这样既能隐藏真实服务器，又能提升连接速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 与 Clash 有什么关系？</h5></div>
     <div class="panel-body">
         Surfboard 是一款基于 Clash 核心的 iOS 应用，专为苹果用户设计。它通过友好的界面实现分流管理、节点切换和延迟测试等功能。与 Clash 类似，Surfboard 也支持订阅更新和多种代理协议，兼容性非常好。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统代理有何区别？</h5></div>
+    <div class="panel-body">
+        TUN 模式拦截系统 IP 层流量，实现全局代理，而系统代理通常只影响支持代理的应用。TUN 更适合游戏、视频和全局科学上网场景，保证所有流量通过节点，提高稳定性和速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 的多用户限速功能如何使用？</h5></div>
@@ -398,14 +383,14 @@ sudo bash &lt;(curl -Ls https://raw.githubusercontent.com/v2fly/fhs-install-v2ra
         Hiddify Next 支持在管理面板中为每个用户设置带宽上限。管理员可以按需分配速率或流量配额，防止单一用户占用过多资源，从而保持整体网络稳定。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何设置？</h5></div>
+    <div class="panel-heading"><h5>V2Ray QUIC 模式适合高丢包网络吗？</h5></div>
     <div class="panel-body">
-        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
+        QUIC 基于 UDP 协议，支持多路复用和零握手，能在高丢包和不稳定网络中减少延迟和丢包。适合视频、游戏和即时通讯等高频应用场景，提高稳定性和速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 支持订阅链接导入吗？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
     <div class="panel-body">
-        Potatso Lite 不支持自动订阅功能，用户需手动添加节点。如果想批量导入订阅，可使用其他客户端生成节点二维码，再手动扫描添加。适合轻量使用者。<hr />    </div>
+        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的 PAC 模式如何优化访问？</h5></div>
@@ -413,9 +398,24 @@ sudo bash &lt;(curl -Ls https://raw.githubusercontent.com/v2fly/fhs-install-v2ra
         PAC 模式可根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何设置？</h5></div>
+    <div class="panel-body">
+        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的流量分流规则支持哪些条件？</h5></div>
     <div class="panel-body">
-        V2Ray 支持按域名、IP、端口、协议或用户标签进行分流。用户可灵活设置国内直连、国外代理或特定节点，实现精准控制和网络优化。    </div>
+        V2Ray 支持按域名、IP、端口、协议或用户标签进行分流。用户可灵活设置国内直连、国外代理或特定节点，实现精准控制和网络优化。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 支持订阅链接导入吗？</h5></div>
+    <div class="panel-body">
+        Potatso Lite 不支持自动订阅功能，用户需手动添加节点。如果想批量导入订阅，可使用其他客户端生成节点二维码，再手动扫描添加。适合轻量使用者。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Vmess 节点可以通过 CDN 吗？</h5></div>
+    <div class="panel-body">
+        可以。Vmess 可通过 WebSocket 与 CDN 结合使用，只需将传输方式设置为 WS 并配置 host 与 path，即可实现流量中转。这样既能隐藏真实服务器，又能提升连接速度。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -463,16 +463,16 @@ sudo bash &lt;(curl -Ls https://raw.githubusercontent.com/v2fly/fhs-install-v2ra
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-26-vless-node-share.htm" title="免费ClashN节点 - 8月26日20.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点订阅节点分享">免费ClashN节点 - 8月26日20.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-12-free-subscribe-node.htm" title="免费ClashN节点 - 8月12日21M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享">免费ClashN节点 - 8月12日21M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-vless-windows.htm" title="免费ClashN节点 - 8月24日19.1M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点分享">免费ClashN节点 - 8月24日19.1M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-9.htm" title="免费ClashN节点 - 8月9日18.4M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月9日18.4M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-free-node-subscribe.htm" title="免费ClashN节点 - 8月30日19.3M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享">免费ClashN节点 - 8月30日19.3M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/vless-node-2026-8-21.htm" title="免费ClashN节点 - 8月21日22.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月21日22.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-20-latest-vless-node.htm" title="免费ClashN节点 - 8月20日22.1M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月20日22.1M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-8-29.htm" title="免费ClashN节点 - 8月29日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点订阅节点分享">免费ClashN节点 - 8月29日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-22-free-node-subscribe.htm" title="免费ClashN节点 - 8月22日19.4M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/V2ray节点/Clash节点订阅节点分享">免费ClashN节点 - 8月22日19.4M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/V2ray节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-vless-node-share.htm" title="免费ClashN节点 - 9月2日18.5M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享">免费ClashN节点 - 9月2日18.5M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-github-2026-8-7.htm" title="免费ClashN节点 - 8月7日22.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月7日22.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-vless-node-2026-9-3.htm" title="免费ClashN节点 - 9月3日21.2M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点订阅节点分享">免费ClashN节点 - 9月3日21.2M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-vless-node-github.htm" title="免费ClashN节点 - 8月6日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 8月6日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-subscribe-node.htm" title="免费ClashN节点 - 8月28日19.5M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅节点分享">免费ClashN节点 - 8月28日19.5M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-vless-node-2026-9-1.htm" title="免费ClashN节点 - 9月1日18.4M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享">免费ClashN节点 - 9月1日18.4M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-27.htm" title="免费ClashN节点 - 8月27日22.8M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月27日22.8M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-free-node-subscribe.htm" title="免费ClashN节点 - 8月14日18.3M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点分享">免费ClashN节点 - 8月14日18.3M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-17.htm" title="免费ClashN节点 - 8月17日21.3M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅节点分享">免费ClashN节点 - 8月17日21.3M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -484,10 +484,10 @@ sudo bash &lt;(curl -Ls https://raw.githubusercontent.com/v2fly/fhs-install-v2ra
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
