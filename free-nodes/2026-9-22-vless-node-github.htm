@@ -333,19 +333,9 @@ sudo systemctl start v2ray
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 如何管理多协议节点和分流？</h5></div>
-    <div class="panel-body">
-        Nekobox 可同时管理 Shadowsocks、VMess、Trojan 等多协议节点。结合策略组和分流规则，可实现不同流量走不同节点，提升网络效率和管理便利性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>QuantumultX 如何实现按协议类型分流？</h5></div>
     <div class="panel-body">
         QuantumultX 可根据 TCP、UDP 或特定应用协议分流流量，结合策略组选择节点。这样可以为游戏、视频或广告屏蔽等应用提供最佳网络体验，提高访问速度和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 的日志功能如何开启？</h5></div>
-    <div class="panel-body">
-        Mihomo 的日志默认关闭以节省性能。若需调试，可在配置文件中启用 `log-level: debug` 参数，日志将输出详细连接信息与错误提示，便于排查问题。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 的 DNS 模块如何工作？</h5></div>
@@ -353,9 +343,14 @@ sudo systemctl start v2ray
         Sing-box 内置 DNS 模块，支持 fake-ip 模式和纯直连模式。它可根据规则选择不同的上游 DNS 服务，从而实现国内外域名智能分流，减少访问延迟。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 是否支持多客户端节点管理？</h5></div>
+    <div class="panel-heading"><h5>Nekobox 如何管理多协议节点和分流？</h5></div>
     <div class="panel-body">
-        支持。Nekobox 与 Shadowsocks、Clash 等客户端独立运行，互不干扰。用户可通过策略组灵活管理节点，实现多客户端分流和网络优化。<hr />    </div>
+        Nekobox 可同时管理 Shadowsocks、VMess、Trojan 等多协议节点。结合策略组和分流规则，可实现不同流量走不同节点，提升网络效率和管理便利性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS 的 XTLS 模式能提升传输效率吗？</h5></div>
+    <div class="panel-body">
+        XTLS 模式通过减少冗余加密和握手次数，降低延迟，提高吞吐量。在高并发和短连接场景下，效率明显优于普通 TLS，同时保持数据安全性和隐蔽性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + Reality 模式如何隐藏流量特征？</h5></div>
@@ -363,14 +358,9 @@ sudo systemctl start v2ray
         Reality 模式通过伪装握手和真实网站特征，使流量难以被 DPI 检测。结合策略组使用，可有效隐藏节点通信特征，同时保持安全和高速传输，适合高封锁环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 配置文件中 inbound 和 outbound 有什么区别？</h5></div>
+    <div class="panel-heading"><h5>Nekobox 是否支持多客户端节点管理？</h5></div>
     <div class="panel-body">
-        在 V2Ray 中，inbound 表示流量进入方式（如本地代理端口），outbound 表示流量出口方式（如 VMess、Trojan 等协议）。通过灵活组合两者，可以实现局域网共享、分流及中继等功能。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 如何在高延迟网络中优化连接？</h5></div>
-    <div class="panel-body">
-        XTLS 模式通过减少握手和加密开销降低延迟。结合策略组和多节点切换，可在高延迟或不稳定网络环境下保证网页浏览、视频播放和游戏连接稳定，提高整体体验。<hr />    </div>
+        支持。Nekobox 与 Shadowsocks、Clash 等客户端独立运行，互不干扰。用户可通过策略组灵活管理节点，实现多客户端分流和网络优化。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 连接不稳定的常见原因有哪些？</h5></div>
@@ -378,9 +368,19 @@ sudo systemctl start v2ray
         VMess 连接不稳定可能由节点延迟过高、服务器防火墙、TLS 配置错误或 ISP 丢包引起。建议测试不同传输协议（如 WS、gRPC）或切换节点，检查日志确认具体错误信息。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 的 XTLS 模式能提升传输效率吗？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 配置文件中 inbound 和 outbound 有什么区别？</h5></div>
     <div class="panel-body">
-        XTLS 模式通过减少冗余加密和握手次数，降低延迟，提高吞吐量。在高并发和短连接场景下，效率明显优于普通 TLS，同时保持数据安全性和隐蔽性。    </div>
+        在 V2Ray 中，inbound 表示流量进入方式（如本地代理端口），outbound 表示流量出口方式（如 VMess、Trojan 等协议）。通过灵活组合两者，可以实现局域网共享、分流及中继等功能。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 的日志功能如何开启？</h5></div>
+    <div class="panel-body">
+        Mihomo 的日志默认关闭以节省性能。若需调试，可在配置文件中启用 `log-level: debug` 参数，日志将输出详细连接信息与错误提示，便于排查问题。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 如何在高延迟网络中优化连接？</h5></div>
+    <div class="panel-body">
+        XTLS 模式通过减少握手和加密开销降低延迟。结合策略组和多节点切换，可在高延迟或不稳定网络环境下保证网页浏览、视频播放和游戏连接稳定，提高整体体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -428,16 +428,16 @@ sudo systemctl start v2ray
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-8-node-share.htm" title="免费ClashN节点 - 9月8日22.1M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点分享">免费ClashN节点 - 9月8日22.1M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-6-free-node-subscribe.htm" title="免费ClashN节点 - 9月6日21.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅节点分享">免费ClashN节点 - 9月6日21.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-20-vless-node-github.htm" title="免费ClashN节点 - 9月20日19.3M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点分享">免费ClashN节点 - 9月20日19.3M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-github-2026-8-13.htm" title="免费ClashN节点 - 8月13日18.5M/S|免费V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点分享">免费ClashN节点 - 8月13日18.5M/S|免费V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-node-2026-8-21.htm" title="免费ClashN节点 - 8月21日22.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月21日22.8M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-8-29.htm" title="免费ClashN节点 - 8月29日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点订阅节点分享">免费ClashN节点 - 8月29日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-github-2026-9-7.htm" title="免费ClashN节点 - 9月7日20.3M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享">免费ClashN节点 - 9月7日20.3M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-23.htm" title="免费ClashN节点 - 8月23日22.5M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 8月23日22.5M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-6-vless-node-github.htm" title="免费ClashN节点 - 8月6日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 8月6日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-15.htm" title="免费ClashN节点 - 8月15日18.3M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月15日18.3M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-26-vless-node-share.htm" title="免费ClashN节点 - 8月26日20.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点订阅节点分享">免费ClashN节点 - 8月26日20.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-github-2026-8-31.htm" title="免费ClashN节点 - 8月31日19.1M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点分享">免费ClashN节点 - 8月31日19.1M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-10-vless-windows.htm" title="免费ClashN节点 - 8月10日21.1M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅节点分享">免费ClashN节点 - 8月10日21.1M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-15.htm" title="免费ClashN节点 - 9月15日22.9M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享">免费ClashN节点 - 9月15日22.9M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-vless-windows.htm" title="免费ClashN节点 - 8月24日19.1M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点分享">免费ClashN节点 - 8月24日19.1M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-24-vless-node-share.htm" title="免费ClashN节点 - 9月24日20.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点订阅节点分享">免费ClashN节点 - 9月24日20.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-14-free-node-subscribe.htm" title="免费ClashN节点 - 9月14日22.3M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点分享">免费ClashN节点 - 9月14日22.3M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-30-vless-windows.htm" title="免费ClashN节点 - 9月30日19.1M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点订阅节点分享">免费ClashN节点 - 9月30日19.1M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vless-node-2026-9-1.htm" title="免费ClashN节点 - 9月1日18.4M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享">免费ClashN节点 - 9月1日18.4M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -449,7 +449,10 @@ sudo systemctl start v2ray
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">1</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
