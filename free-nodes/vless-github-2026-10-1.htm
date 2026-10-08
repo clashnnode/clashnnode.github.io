@@ -265,22 +265,13 @@ ShadowRocket是一款深受技术用户青睐的多协议支持科学上网工�
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-9-30-vless-windows.htm">免费ClashN节点 - 9月30日19.1M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点订阅节点分享</a></p>
+        <p>下一个：<a href="/free-nodes/2026-10-2-free-subscribe-node.htm">免费ClashN节点 - 10月2日21.7M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点订阅节点分享</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>当 V2Ray 报错 inbound 没有监听，可能是哪些配置问题？</h5></div>
+    <div class="panel-heading"><h5>PassWall2 自动切换节点机制如何工作？</h5></div>
     <div class="panel-body">
-        检查 inbound 配置是否包含正确的 port、protocol 与 listen 字段；确认没有端口冲突或权限问题（非 root 绑定 1024 以下端口会失败）；查看日志中具体错误信息并根据提示修复配置。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 的延迟测速功能如何提高网络体验？</h5></div>
-    <div class="panel-body">
-        PassWall2 可以定期测速节点延迟，并结合策略组自动选择最优节点。这样在访问网站或视频时，可以始终使用延迟最低的线路，提高网络稳定性和速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的 UDP 转发模式适合哪些应用？</h5></div>
-    <div class="panel-body">
-        UDP 转发模式适合游戏、语音通话和实时视频等需要低延迟的应用。通过代理 UDP 流量，可以保证这些应用在代理环境下仍然保持快速响应。<hr />    </div>
+        PassWall2 会根据节点延迟和丢包率测试结果，结合策略组自动选择最优节点处理流量。无需用户手动切换，保证网页、视频和游戏流量的速度和稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何自动切换最优节点？</h5></div>
@@ -288,24 +279,19 @@ ShadowRocket是一款深受技术用户青睐的多协议支持科学上网工�
         PassWall2 会定期测试节点延迟和丢包率，并结合策略组自动切换到最优节点。无需手动干预即可保证网页、视频和游戏流量高速稳定访问，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 的 UDP 转发模式适合哪些应用？</h5></div>
+    <div class="panel-body">
+        UDP 转发模式适合游戏、语音通话和实时视频等需要低延迟的应用。通过代理 UDP 流量，可以保证这些应用在代理环境下仍然保持快速响应。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 的加密方式如何选择？</h5></div>
     <div class="panel-body">
         VMess 支持自动加密和 AEAD 加密等多种方式。AEAD 加密更安全且抗重放攻击，适合高安全性需求的网络环境，而普通加密在性能上稍快，但安全性略低。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的节点健康检测如何工作？</h5></div>
+    <div class="panel-heading"><h5>当 V2Ray 报错 inbound 没有监听，可能是哪些配置问题？</h5></div>
     <div class="panel-body">
-        Clash 会定期对每个节点进行延迟和丢包率测试，并根据结果标记节点健康状态。结合策略组，可以自动切换到最优节点，避免访问高延迟或失效节点，提高整体网络稳定性和效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 自动切换节点机制如何工作？</h5></div>
-    <div class="panel-body">
-        PassWall2 会根据节点延迟和丢包率测试结果，结合策略组自动选择最优节点处理流量。无需用户手动切换，保证网页、视频和游戏流量的速度和稳定性，优化网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 日志太多如何调整日志级别？</h5></div>
-    <div class="panel-body">
-        在 Matsuri 或其内核配置中修改日志级别参数（如从 debug 降为 info 或 warning），同时限制日志轮转与最大文件大小。生产环境建议关闭 debug 日志以减少磁盘 I/O 与性能影响。<hr />    </div>
+        检查 inbound 配置是否包含正确的 port、protocol 与 listen 字段；确认没有端口冲突或权限问题（非 root 绑定 1024 以下端口会失败）；查看日志中具体错误信息并根据提示修复配置。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess AEAD 加密在封锁网络中有什么优势？</h5></div>
@@ -313,9 +299,24 @@ ShadowRocket是一款深受技术用户青睐的多协议支持科学上网工�
         AEAD 加密可以防止数据被篡改和流量特征泄露，降低被检测风险。在封锁较高的网络环境中，保证节点长期可用，提高数据传输安全性和访问可靠性，增强用户体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 的延迟测速功能如何提高网络体验？</h5></div>
+    <div class="panel-body">
+        PassWall2 可以定期测速节点延迟，并结合策略组自动选择最优节点。这样在访问网站或视频时，可以始终使用延迟最低的线路，提高网络稳定性和速度。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 精确端口分流如何提升游戏连接？</h5></div>
     <div class="panel-body">
-        Sing-box 可按端口设置流量分流规则，将游戏流量分配到低延迟节点。结合策略组使用，可保证游戏连接稳定，减少延迟和掉线，提高流畅度和网络体验。    </div>
+        Sing-box 可按端口设置流量分流规则，将游戏流量分配到低延迟节点。结合策略组使用，可保证游戏连接稳定，减少延迟和掉线，提高流畅度和网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的节点健康检测如何工作？</h5></div>
+    <div class="panel-body">
+        Clash 会定期对每个节点进行延迟和丢包率测试，并根据结果标记节点健康状态。结合策略组，可以自动切换到最优节点，避免访问高延迟或失效节点，提高整体网络稳定性和效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 日志太多如何调整日志级别？</h5></div>
+    <div class="panel-body">
+        在 Matsuri 或其内核配置中修改日志级别参数（如从 debug 降为 info 或 warning），同时限制日志轮转与最大文件大小。生产环境建议关闭 debug 日志以减少磁盘 I/O 与性能影响。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -363,16 +364,16 @@ ShadowRocket是一款深受技术用户青睐的多协议支持科学上网工�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-24-vless-node-share.htm" title="免费ClashN节点 - 9月24日20.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点订阅节点分享">免费ClashN节点 - 9月24日20.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-github-2026-8-13.htm" title="免费ClashN节点 - 8月13日18.5M/S|免费V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点分享">免费ClashN节点 - 8月13日18.5M/S|免费V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-15.htm" title="免费ClashN节点 - 8月15日18.3M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月15日18.3M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-node-2026-9-25.htm" title="免费ClashN节点 - 9月25日20.4M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点订阅节点分享">免费ClashN节点 - 9月25日20.4M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-6-free-node-subscribe.htm" title="免费ClashN节点 - 9月6日21.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅节点分享">免费ClashN节点 - 9月6日21.4M/S|免费Trojan节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-15.htm" title="免费ClashN节点 - 9月15日22.9M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享">免费ClashN节点 - 9月15日22.9M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-10-vless-node-github.htm" title="免费ClashN节点 - 9月10日20.9M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点订阅节点分享">免费ClashN节点 - 9月10日20.9M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-29.htm" title="免费ClashN节点 - 9月29日20M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点订阅节点分享">免费ClashN节点 - 9月29日20M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-latest-vless-node.htm" title="免费ClashN节点 - 8月8日23M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点分享">免费ClashN节点 - 8月8日23M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-18-node-share.htm" title="免费ClashN节点 - 9月18日22.1M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享">免费ClashN节点 - 9月18日22.1M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-10-7.htm" title="免费ClashN节点 - 10月7日20.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点订阅节点分享">免费ClashN节点 - 10月7日20.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-8-node-share.htm" title="免费ClashN节点 - 9月8日22.1M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点分享">免费ClashN节点 - 9月8日22.1M/S|免费V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-6-node-share.htm" title="免费ClashN节点 - 10月6日22.1M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点分享">免费ClashN节点 - 10月6日22.1M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-9-23.htm" title="免费ClashN节点 - 9月23日22.4M/S|免费Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点分享">免费ClashN节点 - 9月23日22.4M/S|免费Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-16-vless-node-github.htm" title="免费ClashN节点 - 9月16日20.2M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点订阅节点分享">免费ClashN节点 - 9月16日20.2M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-github-2026-9-7.htm" title="免费ClashN节点 - 9月7日20.3M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享">免费ClashN节点 - 9月7日20.3M/S|免费V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-node-2026-9-25.htm" title="免费ClashN节点 - 9月25日20.4M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点订阅节点分享">免费ClashN节点 - 9月25日20.4M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-github-2026-9-13.htm" title="免费ClashN节点 - 9月13日22.3M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享">免费ClashN节点 - 9月13日22.3M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-vless-node-share.htm" title="免费ClashN节点 - 9月2日18.5M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享">免费ClashN节点 - 9月2日18.5M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -384,13 +385,10 @@ ShadowRocket是一款深受技术用户青睐的多协议支持科学上网工�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">1</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                     </ul>
     </div>
